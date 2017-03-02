@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css?family=Unica+One");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: 400;
+  font-size: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html {
+  height: 100vh;
+}
+body {
+  height: 100%;
+  font-size: 1em;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+:focus {
+  outline: none;
+}
+::-moz-focus-inner {
+  border: 0;
+}
+input,
+button {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 1rem;
+}
+[v-cloak] {
+  display: none !important;
+}
+input,
+button,
+textarea {
+  color: unset;
+  border: none;
+  background: none;
+  font: unset;
+}
+.flex-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-gap {
+  flex-grow: 1;
+}
+.text-letterspace {
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  letter-spacing: 0.2rem;
+}
+#app {
+  background: linear-gradient(170deg, #543710, #dea71c);
+  color: #fff;
+  font-family: 'Unica One', sans-serif;
+  min-height: 100%;
+}
+h1 {
+  font-size: 3rem;
+}
+.fcc {
+  background-color: #006400;
+  border: 0.2rem solid rgba(255,255,255,0.502);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin: -0.5rem;
+}
+.btn {
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  color: #fff;
+  background: #006fb6;
+}
+.title {
+  padding: 1.5rem;
+}
+.stocks {
+  padding: 1rem;
+}
+.stock {
+  margin: 0.5rem;
+  background: rgba(0,0,0,0.5);
+  transition: background 0.4s ease;
+}
+.stock:hover {
+  background: rgba(0,0,0,0.75);
+}
+.stock-remove {
+  padding: 0.75rem;
+  align-self: stretch;
+  border-right: 0.2rem solid #fff;
+  transition: background 0.4s ease;
+}
+.stock-remove:hover {
+  background: rgba(238,238,238,0.5);
+}
+.stock-add {
+  background: rgba(45,45,147,0.75);
+}
+.stock-add:hover,
+.stock-add-active {
+  background: rgba(116,143,194,0.75);
+}
+.stock h3 {
+  font-size: 1.1rem;
+  padding: 1rem;
+}
+.stock input {
+  padding: 1rem;
+  width: 8rem;
+  font-size: 1.1rem;
+}
