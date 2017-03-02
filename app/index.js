@@ -1,7 +1,5 @@
 require('./lib/jonoShortcuts.js')
 w.req = require('./lib/request.js')
-w.Vue = require('./lib/vue.js')
-
 
 w.highchart = require('./lib/highcharts.js') // id, data
 w.chart = undefined

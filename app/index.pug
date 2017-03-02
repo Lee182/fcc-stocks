@@ -23,4 +23,5 @@ html(lang='en')
         .stock.flex-row(v-for='stock in stocks')
           .stock-remove.flex-center(@click='remove_stock(stock.name)') x
           h3 {{stock.name}}
+    script(src='/vue.js')
     script(src='/bundle.js')
