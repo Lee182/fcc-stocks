@@ -1,0 +1,26 @@
+doctype
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='/styl.css')
+    title fcc-$tocks
+  body
+    #app(v-cloak)
+      .title.flex-center
+        h1
+          span.fcc fcc
+          | -$tocks
+      #chart
+      .stocks.flex-row
+        .stock.flex-row
+          .stock-remove.stock-add.flex-center(@click='add_stock()') add stock
+          input(
+            placeholder='stock code',
+            @keyup.enter='add_stock()',
+            :value='add_stock_input',
+            @input='add_stock_change($event)')
+        .stock.flex-row(v-for='stock in stocks')
+          .stock-remove.flex-center(@click='remove_stock(stock.name)') x
+          h3 {{stock.name}}
+    script(src='/bundle.js')

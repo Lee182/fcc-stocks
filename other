@@ -1,0 +1,32 @@
+comms.send({
+  user_stocks: [
+    'add',
+    {name: 'AMZN'} // amazon.com
+  ]
+})
+
+
+comms.send({
+  user_stocks: [
+    'remove',
+    {name: 'AMZN'} // amazon.com
+  ]
+})
+
+
+comms.send({
+  user_stocks: [
+    'set',
+    {name: 'AMZN'} // amazon.com
+  ]
+})
+
+
+comms.send({
+  user_stocks: [
+    'get',
+    {name: 'AMZN'} // amazon.com
+  ]
+})
+
+comms.

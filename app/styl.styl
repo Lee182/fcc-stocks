@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Unica+One')
+@require './lib/jonoreset.styl'
+
+$font1 = 'Unica One', sans-serif
+
+
+
+.flex-row
+  display flex
+  flex-flow row wrap
+  justify-content flex-start
+
+.flex-center
+  display flex
+  justify-content center
+  align-items center
+
+.flex-gap
+  flex-grow 1
+
+.text-letterspace
+  text-transform capitalize
+  font-size 0.9rem
+  letter-spacing 0.2rem
+
+#app
+  background linear-gradient(170deg, #543710, #dea71c)
+  color white
+  font-family $font1
+  min-height 100%
+h1
+  font-size 3rem
+.fcc
+  background-color #006400
+  border .2rem solid #ffffff80
+  padding .5rem
+  border-radius .5rem
+  margin -.5rem
+.btn
+  display inline-block
+  padding .5rem
+  border-radius .3rem
+  color white
+  background  #006fb6
+
+.title
+  padding 1.5rem
+
+.stocks
+  padding 1rem
+
+.stock
+  margin .5rem
+  background rgba(#000000, 0.5)
+  transition background .4s ease
+  &:hover
+    background rgba(#000, .75)
+  &-remove
+    padding .75rem
+    align-self stretch
+    border-right .2rem solid white
+    transition background .4s ease
+    &:hover
+      background rgba(#eee, 0.5)
+  &-add
+    background rgba(#2d2d93, 0.75)
+    &:hover
+    &-active
+       background rgba(#748fc2, 0.75)
+  h3
+    font-size 1.1rem
+    padding 1rem
+  input
+    padding 1rem
+    width 8rem
+    font-size 1.1rem
