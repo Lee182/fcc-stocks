@@ -4,7 +4,11 @@ w.req = require('./lib/request.js')
 w.highchart = require('./lib/highcharts.js') // id, data
 w.chart = undefined
 
-w.comms = require('../comms.client.js')('ws://localhost:3000')
+var a = new URL(document.URL)
+var protocol = a.protocol === 'https:' ? 'wss':'ws'
+var path = protocol +'://' +a.host
+console.log(path)
+w.comms = require('../comms.client.js')(path)
 
 vm = new Vue({
   el: '#app',
