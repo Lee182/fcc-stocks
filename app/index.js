@@ -23,6 +23,7 @@ vm = new Vue({
     add_stock: function(){
       console.log('add 1')
       let vm = this
+      if (vm.add_stock_input.tirm() === '') {return}
       comms.send({
         user_stocks: ['add', {name: vm.add_stock_input} ]
       })
