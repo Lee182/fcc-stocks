@@ -54,6 +54,10 @@ function req_and_set_year_data({name}) {
   .then(function(res){
     stocks[i].year_data = res.data
     stocks.year_update = now
+    if (stocks[i].year_data.length === 0) {
+      remove({name})
+      return
+    }
     events.emit('set', name)
   })
 }
